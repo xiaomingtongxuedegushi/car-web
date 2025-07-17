@@ -1,0 +1,26 @@
+{
+  "bagColor": "#1CABB3",
+  "secondColor": "#4bc5cc",
+  "colorList": [
+    {
+      "name": "蓝",
+      "value": "#409EFF",
+      "childValue": "#66B1FF"
+    },
+    {
+      "name": "红",
+      "value": "#FF0000FF",
+      "childValue": "#66B1FF"
+    },
+    {
+      "name": "青",
+      "value": "#1CABB3",
+      "childValue": "#4bc5cc"
+    },
+    {
+      "name": "黑",
+      "value": "#000000",
+      "childValue": "#000000"
+    }
+  ]
+}
