@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
+.mc-page-container {
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.mc-page-left {
+  height: 100%;
+  width: 240px;
+}
+
+.mc-page-left-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.mc-page-right {
+  height: 100%;
+  flex: 1;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: wrap;
+}
+
+.mc-page-right-top {
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.mc-page-right-top-container {
+  height: 100%;
+  //overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+}
+
+
+.mc-page-right-content {
+  flex: 1 1 auto;
+  flex-basis: 0;
+}
+
+
+.mc-page-right-content-container {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#top-nav-color {
+  position: relative;
+
+  .color-flex-layout {
+    margin: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .color-menu-blaock {
+      width: 25px;
+      height: 25px;
+      border-radius: 3px;
+      margin-bottom: 5px;
+    }
+
+  }
+}
+
+#top-nav-logout {
+  position: relative;
+
+  .user-menu {
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .user-menu:hover {
+    background-color: #D9ECFF;
+    color: #409EFF;
+    transition: 0.3s;
+  }
+}
+
+// 公共卡片样式
+.logout-child-menu {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 14px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+}
