@@ -1,0 +1,98 @@
+$leftMenuW: 200px;
+
+$leftMenuH: 500px;
+
+//.canClick {
+//  user-select: none
+//}
+
+.leftActive {
+  color: var(--left-active-color) !important;
+  background-color: var(--left-active-background-color) !important;
+}
+
+.left-menu-layout {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  //background-color: #1CABB3;
+  padding: 14px 14px 14px 14px;
+  overflow: auto;
+  color: #303133;
+  box-shadow: 0 15px 10px 0 #e5e4e4;
+  box-sizing: border-box;
+
+  /* logo内容 */
+  .product-logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px 0 20px;
+
+    &>span {
+      cursor: pointer;
+    }
+  }
+
+  .product-logo > i {
+    font-size: 50px;
+    color: #ffffff;
+  }
+
+  .product-logo span {
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  /* 菜单部分 */
+  .menu-content {
+
+    // 一级菜单
+    .one-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0 15px 0;
+
+      .one-menu-line {
+        width: 27%;
+        height: 1px;
+        border-bottom: 1px solid #ffffff;
+      }
+    }
+
+    .one-menu span {
+      color: #ffffff;
+      margin: 0 10px 0 10px;
+      font-size: 14px;
+    }
+
+    // 二级菜单
+    .second-menu > div {
+      width: 100%;
+      height: 32px;
+      text-align: center;
+      line-height: 32px;
+      border-radius: 5px;
+      color: var(--theme-second-menu-color);
+      background-color: var(--theme-second-menu-background-color);
+      margin-bottom: 11px;
+      transition: all 0.3s;
+    }
+
+    .second-menu > div:hover {
+      color: var(--theme-second-menu-hover-text-color);
+      background-color: var(--theme-second-menu-hover-background-color);
+      cursor: pointer;
+    }
+
+    .second-menu > div > span {
+      margin-right: 20px;
+    }
+
+    .second-menu > div > i {
+      margin-right: 5px;
+    }
+  }
+}
