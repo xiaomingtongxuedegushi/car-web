@@ -1,0 +1,223 @@
+$cardWidth: 130px; // 默认卡片-宽度
+$cardHeight: 110px; // 默认卡片-高度
+
+$cardWidthSmall: 90px;
+$cardHeightSmall: 85px;
+
+.tool-centext-layout {
+  width: auto;
+  height: auto;
+  padding: 30px;
+
+  .tool-card-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all 0.4s;
+
+    .tool-card {
+      width: $cardWidth;
+      height: $cardHeight;
+      margin: 25px 15px 0 15px;
+      border-radius: 10px;
+      background-color: #E1EAFF;
+      padding: 20px;
+      cursor: pointer;
+      transition: all 0.4s;
+
+      & >i {
+        display: block;
+        font-size: 95px;
+      }
+
+      &:hover {
+        transform: translate(0, -10px);
+      }
+
+      .tool-icon-layout {
+        background-color: #ffffff;
+        border-radius: 14px;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &>i {
+          font-size: 40px;
+        }
+      }
+
+      .tool-name {
+        margin-top: 20px;
+        font-size: 16px;
+        user-select: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .tool-centext-layout {
+    width: auto;
+    height: auto;
+    padding: 20px;
+
+    .tool-card-layout {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      transition: all 0.4s;
+
+      .tool-card {
+        width: $cardWidthSmall;
+        height: $cardHeightSmall;
+        margin: 20px 12px 0 12px;
+        border-radius: 10px;
+        background-color: #E1EAFF;
+        padding: 15px;
+        cursor: pointer;
+        transition: all 0.4s;
+
+        & >i {
+          display: block;
+          font-size: 75px;
+        }
+
+        &:hover {
+          transform: translate(0, -10px);
+        }
+
+        .tool-icon-layout {
+          background-color: #ffffff;
+          border-radius: 14px;
+          padding: 10px;
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &>i {
+            font-size: 30px;
+          }
+        }
+
+        .tool-name {
+          margin-top: 20px;
+          font-size: 16px;
+          user-select: none;
+        }
+      }
+    }
+  }
+
+}
+
+.add-tool-layout {
+  padding: 0 25px;
+  width: auto;
+
+  .add-tool-centent {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .add-tool-card {
+      position: relative;
+      box-sizing: border-box;
+      color: #409EFF;
+      width: 46%;
+      height: 60px;
+      padding: 0 14px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      transition: all 0.4s;
+      cursor: pointer;
+      overflow: hidden;
+
+      // 常用工具文字颜色
+      .activeText {
+        color: #ffffff !important;
+      }
+
+      // 不常用-浅蓝色背景
+      &.noStock {
+        background: var(--light-background-color);
+      }
+
+      // 常用工具-深蓝色背景
+      &.stock {
+        background: var(--theme-background-color);
+      }
+
+      & .star {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 35px;
+        height: 100%;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+        font-size: 14px;
+        writing-mode: vertical-lr; // 文字纵向排列
+
+        // 添加按钮背景
+        & .add {
+          display: none;
+          background: var(--theme-background-color);
+        }
+
+        // 移出按钮背景
+        & .remove {
+          display: none;
+          background: var(--left-active-background-color);
+        }
+      }
+
+      &:hover {
+        transform: translate(0, -7px);
+
+        & .add {
+          display: block;
+        }
+        & .remove {
+          display: block;
+        }
+      }
+
+      .add-tool-name {
+        margin-left: 20px;
+        font-size: 17px;
+        user-select: none;
+        color: #000000;
+      }
+
+      .add-tool-icon-layout {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &>i {
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}
+
+
